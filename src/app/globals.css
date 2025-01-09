@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Base theme */
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+    --radius: 0.5rem;
+
+    /* Chart Colors - Light Theme */
+    /* Temperature & Humidity */
+    --color-temperature: 0 100% 65%; /* HSL for #ff4d4d */
+    --color-humidity: 210 100% 65%; /* HSL for #4da6ff */
+
+    /* Air Pollution */
+    --color-co: 210 100% 50%; /* HSL for #0088fe */
+    --color-no2: 168 100% 38%; /* HSL for #00c49f */
+    --color-o3: 45 100% 58%; /* HSL for #ffbb28 */
+    --color-pm25: 21 100% 63%; /* HSL for #ff8042 */
+    --color-pm10: 242 47% 68%; /* HSL for #8884d8 */
+    --color-so2: 147 47% 65%; /* HSL for #82ca9d */
+
+    /* Chart Theme */
+    --chart-1: 215 70% 58%;
+    --chart-2: 168 84% 39%;
+    --chart-3: 41 89% 58%;
+    --chart-4: 21 100% 63%;
+    --chart-5: 245 40% 68%;
+    --chart-6: 147 47% 65%;
+  }
+
+  .dark {
+    /* Base theme */
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+
+    /* Chart Colors - Dark Theme */
+    /* Temperature & Humidity */
+    --color-temperature: 0 100% 70%; /* HSL for #ff6666 */
+    --color-humidity: 210 100% 70%; /* HSL for #66b3ff */
+
+    /* Air Pollution */
+    --color-co: 210 100% 65%; /* HSL for #4da6ff */
+    --color-no2: 168 70% 55%; /* HSL for #40dbc4 */
+    --color-o3: 45 100% 65%; /* HSL for #ffc84d */
+    --color-pm25: 21 100% 70%; /* HSL for #ff9966 */
+    --color-pm10: 242 50% 77%; /* HSL for #a3a1e6 */
+    --color-so2: 147 55% 74%; /* HSL for #9ddbb4 */
+
+    /* Chart Theme */
+    --chart-1: 220 70% 60%;
+    --chart-2: 168 70% 55%;
+    --chart-3: 41 80% 65%;
+    --chart-4: 21 90% 70%;
+    --chart-5: 245 50% 75%;
+    --chart-6: 147 55% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+
+/* Animations */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+  will-change: transform;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out forwards;
+  will-change: transform, opacity;
+}
+
+/* High Contrast Mode Adjustments */
+@media (forced-colors: active) {
+  :root {
+    --primary: CanvasText;
+    --primary-foreground: Canvas;
+    --border: CanvasText;
+  }
+}

@@ -1,0 +1,9 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"  # Set to "npm" since you're using npm for dependencies
+    directory: "/"  # Root directory of the project
+    schedule:
+      interval: "weekly"  # You can change this to "daily", "monthly", etc.
+    commit-message:
+      prefix: "fix"  # Prefix for the commit messages created by dependabot
+    versioning-strategy: "increase"  # Options: "increase", "lockfile-only", etc.
