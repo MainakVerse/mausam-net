@@ -33,7 +33,7 @@
     "react-dom": "^18",
     "react-error-boundary": "^4.1.2",
     "react-leaflet": "^4.2.1",
-    "react-use": "^17.5.1",
+    "react-use": "^17.6.0",
     "recharts": "^2.13.0",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7"
