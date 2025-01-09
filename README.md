@@ -1,6 +1,6 @@
-# 🌤️ Weatherly - Your Ultimate Weather Companion
+# 🌤️ MausumNet
 
-**Weatherly** is a comprehensive weather application that provides real-time updates, forecasts, and detailed weather metrics. It's built with modern web technologies to provide a seamless and engaging user experience.
+**MausumNet** is a comprehensive weather application that provides real-time updates, forecasts, and detailed weather metrics. It's built with modern web technologies to provide a seamless and engaging user experience.
 
 ## 🚀 Key Features
 
@@ -8,10 +8,10 @@
 - 🌡️ Detailed weather metrics including temperature, humidity, and wind speed
 - 🌆 Air quality monitoring and UV index tracking
 - 🎨 Light/Dark theme support
-- 🌐 Multi-language support
-- 📱 Responsive design for various devices
-- ♿ Accessibility-focused interface
+- ⚙️ Metric/Imperial system converter
+- 📱 Responsive design for multiple displays
 - 🗺️ Interactive weather maps
+  
 
 ## 🛠️ Built With
 
@@ -24,17 +24,16 @@
 - 📊 **Recharts** - Composable charting library for React
 - 🗺️ **React Leaflet** - Maps integration
 - 🌙 **next-themes** - Theme management
+- 📇 **shadcn-widget** - Metric convertor
 - 🚨 **React Error Boundary** - Error handling
 
 ## 📈 Development Process
 
-The development of Weatherly focused on creating a user-friendly interface with robust functionality:
-
-1. 🌍 Implemented core weather tracking features
-2. 🔍 Integrated OpenWeather API for accurate data
-3. 🎨 Developed responsive UI with theme support
-4. ♿ Implemented comprehensive accessibility features
-5. ⚡ Optimized performance across all devices Throughout the development process, I prioritized code quality, accessibility, and user experience.
+1. 🌍 Architecture
+2. 🔍 Resource Analysis
+3. 🎨 Development
+4. ♿ Testing
+5. ⚡ Deployment
 
 ## 🏃‍♂️ Running the Project
 
@@ -43,8 +42,8 @@ To run Weatherly locally, follow these steps:
 1. 📥 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/mausumnet.git
-cd mausumnet
+git clone https://github.com/yourusername/mausum-net.git
+cd mausum-net
 ```
 
 2.📦 Set up environment variables:
@@ -52,8 +51,7 @@ Create a `.env.local` file in the root directory with the following format:
 
 ```env
 Example env:
-NEXT_PUBLIC_OPENWEATHER_API_KEY= 0lh8qVL49XIw3o30fgDPxcIgTjfBfiyE
-NEXT_PUBLIC_BASE_URL= http://localhost:3000
+NEXT_PUBLIC_OPENWEATHER_API_KEY= 'your API key'
 ```
 
 > Note: You'll need to obtain an API key from [OpenWeather](https://openweathermap.org/api) to use the weather services.
@@ -82,12 +80,8 @@ This project uses the OpenWeather API for weather data. Ensure you comply with O
 
 ## Screenshots
 
-- ![Screenshot 1](https://github.com/user-attachments/assets/weather-app-screenshot-1.png)
-- ![Screenshot 2](https://github.com/user-attachments/assets/weather-app-screenshot-2.png)
-- ![Screenshot 3](https://github.com/user-attachments/assets/weather-app-screenshot-3.png)
-- ![Screenshot 4](https://github.com/user-attachments/assets/weather-app-screenshot-4.png)
 
 ---
 
-Created with ❤️ by Manjunath R
-🌤️ Weather data provided by OpenWeather API
+Created with 💙 by **Mainak**
+
