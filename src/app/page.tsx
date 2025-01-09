@@ -125,7 +125,7 @@ export default function WeatherApp() {
 
     return (
       <Suspense fallback={<WeatherDashboardSkeleton />}>
-        <WeatherDashboard weatherData={weatherData} unit={unit} />
+        <WeatherDashboard weatherData={weatherData} initialUnit={unit} />
       </Suspense>
     );
   }, [
