@@ -79,6 +79,14 @@ yarn dev
 This project uses the OpenWeather API for weather data. Ensure you comply with OpenWeather's terms of service when using their API.
 
 ## Screenshots
+![image](https://github.com/user-attachments/assets/5df2ea10-ea14-4033-9ae3-0295926147ed)
+![image](https://github.com/user-attachments/assets/4f9e63f0-c5ce-4985-b589-bf7a9a2b15b0)
+![image](https://github.com/user-attachments/assets/c7f7fe33-5ba0-43ba-a9af-58a1a63f2332)
+![image](https://github.com/user-attachments/assets/f690acc8-7bea-4d3d-b39b-2c5bc3e9aaa9)
+![image](https://github.com/user-attachments/assets/4c513cd8-6b85-43f3-8852-b1aa54263f47)
+![image](https://github.com/user-attachments/assets/83b40b86-752d-4df3-bc03-10d7c109ef72)
+
+
 
 
 ---
