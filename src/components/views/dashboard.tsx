@@ -78,7 +78,7 @@ const WeatherDashboard: React.FC<WeatherDashboardProps> = ({
           <select
             value={unit}
             onChange={(e) => setUnit(e.target.value as 'metric' | 'imperial')}
-            className="w-72 px-4 py-2 text-gray-700 bg-white rounded-lg shadow-md
+            className="w-64 px-4 py-2 text-gray-700 bg-white rounded-lg shadow-md
                      appearance-none cursor-pointer
                      border border-gray-200 hover:border-gray-300
                      focus:outline-none focus:ring-2 focus:ring-blue-500
