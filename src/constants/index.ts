@@ -1,6 +1,6 @@
 import {Coordinates} from "@/types/weather";
 
 export const DEFAULT_COORDINATES: Coordinates = {
-    lat: 40.712776,
-    lon: -74.005974,
+    lat: 22.572645,
+    lon: 88.363892,
 };
