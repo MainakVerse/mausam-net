@@ -73,7 +73,7 @@ const CurrentWeatherCard: React.FC<CurrentWeatherCardProps> = ({
             <p className="text-8xl font-bold tracking-tighter">
               {Math.round(currentWeather.main.temp)}°
             </p>
-            <p className="text-2xl font-bold mb-2 ml-1">
+            <p className="text-3xl font-bold mb-2 ml-1">
               {unit === 'metric' ? 'C' : 'F'}
             </p>
           </div>
