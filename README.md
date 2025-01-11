@@ -2,6 +2,10 @@
 
 **MausumNet** is a comprehensive weather application that provides real-time updates, forecasts, and detailed weather metrics. It's built with modern web technologies to provide a seamless and engaging user experience.
 
+## ⚙️Architecture
+![image](https://github.com/user-attachments/assets/6fb20cc1-b42f-46d8-8052-d8690a5ae442)
+
+
 ## 🚀 Key Features
 
 - 🌍 Real-time weather updates and forecasts
